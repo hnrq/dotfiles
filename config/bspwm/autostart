@@ -7,8 +7,8 @@ xsetroot -cursor_name left_ptr &
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0" &
 xrdb merge .Xresources &
 ## Wallpaper. Nitrogen just draws wallpaper, 
-## sh ~/.fehbg &
-sh ~/.animated_wallpaper &
+sh ~/.fehbg &
+## sh ~/.animated_wallpaper &
 ## compositing. Required for shadows, transparency and stuff. 
 # Alter compton settings if using intel graphics
 GRAPHIC_CARD=$(lspci | grep -i "vga" | sed 's/.*://' | sed 's/(.*//' | sed 's/^[ \t]*//')
@@ -17,7 +17,7 @@ if [[ $(echo $GRAPHIC_CARD | grep -i 'intel\|lenovo') != "" ]]; then MCODE='init
   grep -q 'vsync = "opengl-swc";' ~/.config/compton.conf || echo 'vsync = "opengl-swc";' >> ~/.config/compton.conf
 fi
 ## Reduces flicker. Disabling saves resources.
-compton -b &
+picom -b &
 ## enable local fonts in .fonts directory
 xset +fp /usr/share/fonts/local &
 xset +fp /usr/share/fonts/misc &
@@ -33,22 +33,7 @@ xset s noexpose &
 xset c on &
 xset -dpms &
 xbacklight -set 15 &
-## Run screenlock when suspending
-light-locker &
-## srand
-autorandr --change --default two-monitors &
-srandrd autorandr --change --default &
 ## Make monitor settings persist between reboots
 eval $(awk -F'=' '/Exec=/ {print $2}' ~/.config/autostart/lxrandr-autostart.desktop) &
-## Notify about package updates
-update-checker 7200 &
 ## Map super key to trigger rofi when used alone
 xcape -e 'Super_L=Super_L|Shift_L|space' &
-## Polkit agent
-/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
-## Gnome keyring
-gnome-keyring-daemon &
-thunar --daemon &
-/usr/lib/mate-notification-daemon/mate-notification-daemon &
-## Welcome message
-sleep 1 && notify-send "Welcome to Manjaro-bspwm! " "Press super + F1 to show keybindings" &
