@@ -2,7 +2,7 @@
 #
 # Cleanly quit bspwm
 super + shift + q
-  bspc quit 1 && pkill lemonpanel && pkill lemonbar
+  bspc quit 1
 
 # Print screen
 super + Print
@@ -14,10 +14,6 @@ super + ctrl + shift + Print
 super + ctrl + Print
   maim | xclip -selection clipboard -t image/png
 
-
-# Show keybindings
-super + F1
-  $TERMINAL -e keybindings.sh
 #
 # Window manipulation
 # ______________
@@ -270,25 +266,16 @@ super + shift + space
 #  dmenu_recent -h $PANEL_HEIGHT -fn 'xos4 Terminus:size=15' -i
 
 super + shift + Return
-  default-terminal
+  urxvt
 super + z
-  default-terminal
-
-super + shift + z
-  open-terminal-here
-  
-super + r
-  rofi-finder.sh
-
-super + shift + b
-  $BROWSER
+  urxvt
         
 super + e
   thunar
 
 # Use slightly bigger font for ranger
 super + shift + e
-  default-terminal ranger
+  urxvt -e ranger
 
 Print
   scrot
@@ -298,11 +285,8 @@ Print
 # Media keys
 #
 
-super + F11
-  volume up
-
-super + F10
-  volume down
+XF86Audio{Raise,Lower}Volume
+  amixer set 'Master' 1%{+,-} unmute
 
 XF86AudioMute
   volume mute
