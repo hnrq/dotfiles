@@ -1,2 +1,2 @@
 # Dotfiles
-Those are the Dotfiles used on my Manjaro Linux.
+Setup files used on my ArchLinux. Includes some Manjaro BSPWM scripts.
