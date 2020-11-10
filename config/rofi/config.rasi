@@ -6,6 +6,7 @@
 
 configuration {
 	theme: "~/.cache/wal/colors-rofi-dark.rasi";
+	theme: "~/.local/share/rofi/themes/onedark.rasi";
 	modi: 							"combi";
 	//combi-modi: 					"window,drun,\/:rofind,run";
 	combi-modi: 					"window,drun,run";
