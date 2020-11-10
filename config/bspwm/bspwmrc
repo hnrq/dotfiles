@@ -23,6 +23,7 @@ bspc config remove_unplugged_monitors true
 ## Honor size hints: do not make windows smaller than they wish to be
 #bspc config honor_size_hints true 
 
+. "${HOME}/.cache/wal/colors.sh"
 ##Color settings
 bspc config focused_border_color "#1ABB9B"
 bspc config normal_border_color "#222D32"
