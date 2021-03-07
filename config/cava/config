@@ -2,9 +2,6 @@
 
 
 [general]
-
-# Smoothing mode. Can be 'normal', 'scientific' or 'waves'. DEPRECATED as of 0.6.0
-; mode = normal
  
 # Accepts only non-negative values.
 ; framerate = 60
@@ -56,7 +53,7 @@
 # For alsa 'source' will be the capture device.
 # For fifo 'source' will be the path to fifo-file.
 # For shmem 'source' will be /squeezelite-AA:BB:CC:DD:EE:FF where 'AA:BB:CC:DD:EE:FF' will be squeezelite's MAC address
-; method = pulse
+method = pulse
 ; source = auto
 
 ; method = alsa
@@ -107,16 +104,16 @@
 # Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
 # Or defined by hex code '#xxxxxx' (hex code must be within ''). User defined colors requires a
 # terminal that can change color definitions such as Gnome-terminal or rxvt.
-; background = black
-; foreground = cyan
+ background = black
+ foreground = cyan
 
 # Gradient mode, only hex defined colors are supported, background must also be defined in hex
 # or remain commented out. 1 = on, 0 = off. Warning: for certain terminal emulators cava will
 # not able to restore color definitions on exit, simply restart your terminal to restore colors.
- gradient = 1
- gradient_count = 2
- gradient_color_1 = "#607A85"
- gradient_color_2 = "#49A0A2"
+; gradient = 1
+; gradient_count = 2
+; gradient_color_1 = "#607A85"
+; gradient_color_2 = "#49A0A2"
 
 
 
