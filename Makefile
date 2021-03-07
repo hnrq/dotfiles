@@ -48,7 +48,7 @@ base:
 setup: ## Install arch packages using pacman
 	@make check_reflector
 	sudo pacman -S --noconfirm base base-devel python-pywal xorg go fish \
-	neovim bspwm sxhkd polybar picom htop python rust rxvt-unicode feh \
+	neovim bspwm sxhkd polybar picom htop python rustup rxvt-unicode feh \
 	ranger rofi
 	@${PWD}/utils/echo_success "Basic packages installed!"
 
