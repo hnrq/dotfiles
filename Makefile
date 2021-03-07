@@ -8,6 +8,8 @@ dotfiles:
 	@for folder in $(wildcard ${PWD}/config/*/) ; do \
 		ln -vsf $$folder ${HOME}/.config/; \
 	done
+	@ln -vsf ${PWD}/config/picom.conf ${HOME}/.config/picom.conf
+	@ln -vsf ${PWD}/config/betterlockscreenrc ${HOME}/.config/picom.conf
 	@echo "Dotfiles installed!"
 
 fish_wal:
@@ -16,6 +18,15 @@ fish_wal:
 	@mkdir -p ${HOME}/.config/fish
 	@echo "source ${HOME}/.cache/wal/colors.fish" > ${HOME}/.config/fish/colors.fish
 
+lockscreen:
+ifneq ($(wildcard /usr/bin/betterlockscreen),)
+	@sudo systemctl enable betterlockscreen@${USER}
+	@betterlockscreen -u ${PWD}/Pictures/night-wallpaper.jpg
+	@${PWD}/utils/echo_success "betterlockscreen successfully installed!"
+else
+	@${PWD}/utils/echo_error "You need to install betterlockscreen \
+first! Try installing it through yay -S betterlockscreen"
+endif
 
 neovim:
 	@mkdir -p ${HOME}/.config
@@ -65,7 +76,7 @@ yay: ## Install yay AUR package manager
 yay_apps:
 ifneq ($(wildcard /usr/bin/yay),)
 	@sudo pacman -S telegram-desktop && yay -S --noconfirm \
-	visual-studio-code-bin google-chrome
+	visual-studio-code-bin google-chrome betterlockscreen
 else
 	@${PWD}/utils/echo_error "You need to install yay first, try running make yay."
 endif
@@ -81,5 +92,6 @@ install:
 	@make yay
 	@make yay_apps
 	@make fish_wal
+	@make lockscreen
 	@make dotfiles
 	@make scripts
