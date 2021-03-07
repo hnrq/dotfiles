@@ -1,11 +1,13 @@
 # Makefile
 alternative-polybar:
-	@yes | cp -r ./config/polybar-alternative/ $HOME/.config/
-	@ln -vsf ./config/polybar-alternative $HOME/.config/polybar
+	@ln -vsf ${PWD}/config/polybar-alternative/*/ ${HOME}/.config/polybar
 	@echo "Alternative polybar installed!"
 
-config:
-	@ln -vsf ./config $HOME/.config
+dotfiles:
+	@mkdir -p ${HOME}/.config
+	@for folder in $(wildcard ${PWD}/config/*/) ; do \
+		ln -vsf $$folder ${HOME}/.config/; \
+	done
 	@echo "Dotfiles installed!"
 
 check_reflector: ## Install base
@@ -56,5 +58,5 @@ install:
 	@make setup
 	@make yay
 	@make yay_apps
-	@make config
+	@make dotfiles
 	@make scripts
