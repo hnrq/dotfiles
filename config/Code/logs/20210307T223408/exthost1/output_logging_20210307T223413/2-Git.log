@@ -1,0 +1,110 @@
+Looking for git in: git
+Using git 2.30.1 from git
+> git rev-parse --git-dir
+Open repository: /home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/.git/refs/remotes/origin/master', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse overleaf-2021-03-08-0122
+> git rev-parse --symbolic-full-name overleaf-2021-03-08-0122@{u}
+> git rev-list --left-right overleaf-2021-03-08-0122...refs/remotes/origin/overleaf-2021-03-08-0122
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/.git/refs/remotes/origin/overleaf-2021-03-08-0122', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse overleaf-2021-03-08-0122
+> git rev-parse --symbolic-full-name overleaf-2021-03-08-0122@{u}
+> git rev-list --left-right overleaf-2021-03-08-0122...refs/remotes/origin/overleaf-2021-03-08-0122
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/.git/refs/remotes/origin/overleaf-2021-03-08-0122', is most likely packed.
+> git show --textconv :main.tex
+> git ls-files --stage -- /home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/main.tex
+> git cat-file -s 739e7772d7ec59b7a48c994baee8caa7dd557049
+> git check-ignore -v -z --stdin
+> git show --textconv :2:main.tex
+> git ls-tree -l :2 -- /home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/main.tex
+fatal: Not a valid object name :2
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse overleaf-2021-03-08-0122
+> git rev-parse --symbolic-full-name overleaf-2021-03-08-0122@{u}
+> git rev-list --left-right overleaf-2021-03-08-0122...refs/remotes/origin/overleaf-2021-03-08-0122
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/.git/refs/remotes/origin/overleaf-2021-03-08-0122', is most likely packed.
+> git ls-tree -l :2 -- /home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/main.tex
+fatal: Not a valid object name :2
+> git show --textconv :2:main.tex
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse overleaf-2021-03-08-0122
+> git rev-parse --symbolic-full-name overleaf-2021-03-08-0122@{u}
+> git rev-list --left-right overleaf-2021-03-08-0122...refs/remotes/origin/overleaf-2021-03-08-0122
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/.git/refs/remotes/origin/overleaf-2021-03-08-0122', is most likely packed.
+git.stage 1
+> git ls-tree -l :2 -- /home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/main.tex
+fatal: Not a valid object name :2
+> git ls-tree -l :2 -- /home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/main.tex
+> git rm -- /home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/main.tex
+fatal: Not a valid object name :2
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse overleaf-2021-03-08-0122
+> git rev-parse --symbolic-full-name overleaf-2021-03-08-0122@{u}
+> git rev-list --left-right overleaf-2021-03-08-0122...refs/remotes/origin/overleaf-2021-03-08-0122
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/.git/refs/remotes/origin/overleaf-2021-03-08-0122', is most likely packed.
+git.stage.scmResources 0
+> git ls-tree -l :2 -- /home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/main.tex
+fatal: Not a valid object name :2
+> git show --textconv :2:main.tex
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse overleaf-2021-03-08-0122
+> git rev-parse --symbolic-full-name overleaf-2021-03-08-0122@{u}
+> git rev-list --left-right overleaf-2021-03-08-0122...refs/remotes/origin/overleaf-2021-03-08-0122
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/.git/refs/remotes/origin/overleaf-2021-03-08-0122', is most likely packed.
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse overleaf-2021-03-08-0122
+> git rev-parse --symbolic-full-name overleaf-2021-03-08-0122@{u}
+> git rev-list --left-right overleaf-2021-03-08-0122...refs/remotes/origin/overleaf-2021-03-08-0122
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/.git/refs/remotes/origin/overleaf-2021-03-08-0122', is most likely packed.
+> git config --get commit.template
+> git ls-tree -l :2 -- /home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/main.tex
+fatal: Not a valid object name :2
+> git show --textconv :2:main.tex
+> git ls-tree -l :2 -- /home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/main.tex
+> git status -z -u
+fatal: Not a valid object name :2
+> git symbolic-ref --short HEAD
+> git rev-parse overleaf-2021-03-08-0122
+> git rev-parse --symbolic-full-name overleaf-2021-03-08-0122@{u}
+> git rev-list --left-right overleaf-2021-03-08-0122...refs/remotes/origin/overleaf-2021-03-08-0122
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/.git/refs/remotes/origin/overleaf-2021-03-08-0122', is most likely packed.
+> git config --get commit.template
+> git ls-tree -l :2 -- /home/dalborga/Workfolder/plf-es-2021-1-tcc2-5732100-mateus-fonseca-e-henrique-alberone/main.tex
+fatal: Not a valid object name :2

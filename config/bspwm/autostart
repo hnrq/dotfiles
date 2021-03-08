@@ -1,7 +1,6 @@
+#!/bin/sh
 ## Load appearance settings
 	xsetroot -cursor_name left_ptr &
-	export GTK2_RC_FILES="$HOME/.gtkrc-2.0" &
-	xrdb merge .Xresources &
 ## Reduces flicker. Disabling saves resources.
 	picom -b &
 ## enable local fonts in .fonts directory
@@ -13,7 +12,7 @@
 	fc-cache -fv &
 	nm-applet &
 ## Automount removable media
- devmon &
+	devmon &
 ## powersaving options
 	xset s off &
 	xset s noblank &
@@ -22,7 +21,6 @@
 	xset -dpms &
 	wal -R &
 	feh --bg-scale `cat $HOME/.cache/wal/wal` &
-	sxhkd &
 	$HOME/.config/polybar/launch.sh &
 
 ## Map super key to trigger rofi when used alone

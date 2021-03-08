@@ -5,13 +5,13 @@ super + shift + q
   bspc quit 1
 
 # Print screen
-super + Print
+Print
   maim ~/Pictures/$(date +%s).png
-super + shift + Print
+shift + Print
   maim -s ~/Pictures/$(date +%s).png
-super + ctrl + shift + Print
+ctrl + shift + Print
   maim -s | xclip -selection clipboard -t image/png
-super + ctrl + Print
+ctrl + Print
   maim | xclip -selection clipboard -t image/png
 
 #
