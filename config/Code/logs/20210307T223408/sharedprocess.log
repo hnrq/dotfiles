@@ -1,3 +1,0 @@
-[2021-03-07 22:34:12.787] [sharedprocess] [info] main {"machineId":"5a411b3284443b9fd123378bfed756bc6cff413eb7ac36ecd03a048bc43669e3","windowId":2}
-[2021-03-07 22:34:12.867] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/dalborga/.config/Code/User/snippets'
-[2021-03-07 22:34:52.826] [sharedprocess] [info] Starting to clean up unused language packs.

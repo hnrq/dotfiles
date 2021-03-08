@@ -4,9 +4,13 @@ alternative-polybar:
 	@echo "Alternative polybar installed :)"
 
 dotfiles:
-	@rm -rf ${HOME}/.config
-	@ln -vsf ${PWD}/config ${HOME}/.config
-	@echo "Dotfiles installed :)"
+	@mkdir -p ${HOME}/.config
+	@for folder in $(wildcard ${PWD}/config/*/) ; do \
+		ln -vsf $$folder ${HOME}/.config/; \
+	done
+	@ln -vsf ${PWD}/config/picom.conf ${HOME}/.config/picom.conf
+	@ln -vsf ${PWD}/config/betterlockscreenrc ${HOME}/.config/betterlockscreenrc
+	@echo "Dotfiles installed!"
 
 fish_wal:
 	@sudo pacman -S --needed fish python-pywal
