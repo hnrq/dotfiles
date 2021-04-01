@@ -1,7 +1,12 @@
 # Makefile
 alternative-polybar:
-	@ln -vsf ${PWD}/config/polybar-alternative/*/ ${HOME}/.config/polybar
+	@mkdir -p ${HOME}/.config/polybar 
+	@ln -vsf ${PWD}/config/polybar-alt/* ${HOME}/.config/polybar/
 	@echo "Alternative polybar installed :)"
+
+polybar:
+	@ln -vsf ${PWD}/config/polybar/* ${HOME}/.config/polybar/
+	@echo "polybar installed :)"
 
 dotfiles:
 	@mkdir -p ${HOME}/.config
