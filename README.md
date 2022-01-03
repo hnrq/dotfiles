@@ -8,4 +8,4 @@ To install those dotfiles, run the following command:
 sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply hnrq
 ```
 
-![](desktop_preview.png)
+![](Pictures/desktop_preview.png)
