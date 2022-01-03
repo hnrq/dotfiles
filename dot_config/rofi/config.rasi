@@ -1,0 +1,21 @@
+configuration {
+	modi: 							"combi";
+	combi-modi: 					"window,drun,run";
+	me-select-entry:				"MouseSecondary";
+	me-accept-entry:				"MousePrimary";
+	scroll-method: 1;
+    // The display name of this browser
+    display-ssh:                   "ssh";
+    // The display name of this browser
+    display-run:                    "#! ";
+    // The display name of this browser
+    display-drun:                   "";
+    // The display name of this browser
+    display-window:                 "";
+    display-combi:                  "Exec -> ";
+    show-icons: true;
+}
+
+@theme "~/.cache/wal/colors-rofi-dark.rasi"
+@theme "~/.local/share/rofi/themes/onedark.rasi"
+

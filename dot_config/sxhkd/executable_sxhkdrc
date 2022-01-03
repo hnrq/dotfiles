@@ -1,0 +1,189 @@
+# bspwm hotkeys
+#
+# Cleanly quit bspwm
+super + shift + q
+  bspc quit 1
+
+# Print screen
+Print
+  maim ~/Pictures/$(date +%s).png
+shift + Print
+  maim -s ~/Pictures/$(date +%s).png
+ctrl + shift + Print
+  maim -s | xclip -selection clipboard -t image/png
+ctrl + Print
+  maim | xclip -selection clipboard -t image/png
+
+#
+# Window manipulation
+# ______________
+
+# Close window
+super + x
+  bspc  node -c
+
+# Kill window
+super + shift + x
+  bspc  node -k
+
+# Toggle tiling mode of window
+super + shift + t
+  bspc node -t {pseudo_tiled,tiled}
+super + t
+  {bspc node -t floating && window-placer $(bspc query -T -d | grep -o '"state":"floating"' | wc -l),bspc node -t tiled}
+# Force all windows of the desktop to tile
+super + ctrl + t
+  bspcp tile
+# Force all windows of the desktop to float and arrange them
+super + ctrl + shift + t
+  bspcp float
+  
+# Toggle fullscreen
+super + shift + f 
+  bspc node -t {fullscreen,tiled}  
+
+# Try to keep size and position of the selected window
+super + o
+  bspc node -g private
+
+# Make window sticky
+super + i
+  bspc node -g sticky
+
+# Lock a window from closing
+super + Escape
+  bspc node -g locked 
+
+
+#
+# Window moving and splitting
+# ______________    
+
+# Autopresel (split window in its largest dimension)
+ctrl + space
+  auto-presel
+  
+alt + ctrl + {Left,Down,Up,Right}
+  bspc node -p \~{west,south,north,east}
+
+alt + ctrl + {1-9}
+  bspc node -o 0.{1-9}
+    
+# Move current window to largest space or preselected area if there is one.
+super + Return
+    windowpromoter
+
+# Create a new "master area", splitting the whole desktop instead of just windows.
+alt + Return
+  bspc node -n @/
+  
+# go (Shift=move) to desktop (and focus the monitor that the desktop is located on. Bspwm style)
+super + {_,shift + }{1-9,0}
+    bspc {desktop -f,node -d} ^{1-9,10}
+
+
+# Select previous / next desktop
+super + {m,n}
+  bspc desktop -f {prev.occupied,next.occupied} 
+
+# cycle windows
+alt + {_,shift + }Tab
+    bspc node -f {next,prev}
+
+# Go to specific window
+super + Tab
+  WindowSelector
+  
+super +  {Left,Down,Up,Right}
+    focusmover {west,south,north,east}
+          
+# Different style of movement: transplant into window in chosen direction
+super + shift + {Left,Down,Up,Right}
+  euclid_mover {west,south,north,east}
+
+#resize windows
+super + ctrl + {Left,Down,Up,Right}
+  bspwm_resize.sh {west,south,north,east}
+
+#
+# Layout manipulation/desktop level controls
+# ______________    
+
+# Toggle monocle mode
+super + f 
+  bspc desktop -l next
+  
+# Balance tree
+super + b
+  bspc node @/ -B
+
+# Balance brother node. If you do this on biggest window of the desktop, it usually means balancing all windows with except the biggest.
+super + alt + b
+  bspc node @brother -B
+  
+# Undo balancing (equalize windows)
+super + ctrl + b
+  bspc node @/ -E
+
+# Toggle automatic balancing of windows
+alt + b
+  euclid_balancer
+
+# Mirror and flip leaves of tree
+super + {comma,period}
+  bspc node @/ -F {horizontal,vertical}
+  
+# Rotate leaves of tree
+super + shift + {comma,period}
+  bspc node @/ -R {90,270}
+
+# run applications
+super + space
+  dmenu_recent -fn 'xos4 Terminus:size=15' -i -l 14 -w 600 -y $PANEL_HEIGHT
+
+# Triggered by jus tapping super 
+super + shift + space
+  rofi -show run
+
+#super + p
+#  dmenu_recent -h $PANEL_HEIGHT -fn 'xos4 Terminus:size=15' -i
+
+super + shift + Return
+  urxvt
+super + z
+  urxvt
+        
+super + e
+  thunar
+
+# Use slightly bigger font for ranger
+super + shift + e
+  urxvt -e ranger
+
+#
+# Media keys
+#
+
+XF86Audio{Raise,Lower}Volume
+  amixer set 'Master' 1%{+,-} unmute
+
+XF86AudioMute
+  volume mute
+  
+XF86MonBrightnessDown
+ xbacklight -dec 5 
+
+XF86MonBrightnessUp
+ xbacklight -inc 5
+ 
+
+XF86Sleep
+  systemctl suspend
+
+# make sxhkd reload its configuration files:
+super + shift + Escape
+  pkill -USR1 -x sxhkd
+
+# In case bspwmrc fails to execute/you wish have plugged in a new monitor
+super + shift + r
+  bspwmrc

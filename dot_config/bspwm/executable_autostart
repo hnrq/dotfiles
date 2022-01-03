@@ -1,0 +1,27 @@
+#!/bin/sh
+## Load appearance settings
+	xsetroot -cursor_name left_ptr &
+## Reduces flicker. Disabling saves resources.
+	picom -b &
+## enable local fonts in .fonts directory
+	xset +fp $HOME/.local/share/fonts &
+## xset +fp $HOME/.local/share/fonts/NerdFonts &
+	xset +fp /usr/share/fonts/local &
+	xset +fp /usr/share/fonts/misc &
+	xset fp rehash &
+	fc-cache -fv &
+	nm-applet &
+## Automount removable media
+	devmon &
+## powersaving options
+	xset s off &
+	xset s noblank &
+	xset s noexpose &
+ 	xset c on &
+	xset -dpms &
+	wal -R &
+	feh --bg-scale `cat $HOME/.cache/wal/wal` &
+	$HOME/.config/polybar/launch.sh &
+
+## Map super key to trigger rofi when used alone
+	xcape -e 'Super_L=Super_L|Shift_L|space' &
