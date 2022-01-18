@@ -1,19 +1,14 @@
 configuration {
-	modi: 							"combi";
-	combi-modi: 					"window,drun,run";
-	me-select-entry:				"MouseSecondary";
-	me-accept-entry:				"MousePrimary";
+  modi: "window,drun,run,ssh";
+	combi-modi: "window,drun,run";
+	me-select-entry: "MouseSecondary";
+	me-accept-entry: "MousePrimary";
+  font: "Unifont 12";
 	scroll-method: 1;
-    // The display name of this browser
-    display-ssh:                   "ssh";
-    // The display name of this browser
-    display-run:                    "#! ";
-    // The display name of this browser
-    display-drun:                   "";
-    // The display name of this browser
-    display-window:                 "";
-    display-combi:                  "Exec -> ";
-    show-icons: true;
+  display-ssh: "ssh";
+  display-run: "Open ";
+  display-drun: "";
+  display-combi: "Exec -> ";
 }
 
 @theme "~/.cache/wal/colors-rofi-dark.rasi"

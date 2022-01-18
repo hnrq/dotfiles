@@ -68,6 +68,7 @@
     "CtrlShiftUp": "SelectToStart",
     "CtrlT": "AddTab",
     "CtrlU": "ToggleMacro",
+    "CtrlUnderscore": "lua:comment.comment",
     "CtrlUp": "ParagraphPrevious",
     "CtrlV": "Paste",
     "CtrlW": "DeleteWordLeft",

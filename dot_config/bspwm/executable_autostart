@@ -19,7 +19,6 @@
 	xset s noexpose &
  	xset c on &
 	xset -dpms &
-	wal -R &
 	feh --bg-scale `cat $HOME/.cache/wal/wal` &
 	$HOME/.config/polybar/launch.sh &
 
