@@ -22,7 +22,7 @@ bye() {
 
 msg "Execute $0..."
 
-args="--deps --emacs --vim"
+args="--deps --emacs --nvim --extra-deps"
 
 {{ if eq .system.sound "alsa" }}
 args="$args --sound-alsa"

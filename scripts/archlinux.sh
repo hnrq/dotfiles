@@ -3,7 +3,8 @@
 set -o errexit -o nounset
 
 ins="pacman -S --noconfirm --needed"
-pkgs_aur="ly betterlockscreen"
+pkgs_aur="ly betterlockscreen google-chrome"
+pkgs=""
 
 build() {
   PKG_URL="https://aur.archlinux.org/cgit/aur.git/snapshot/$1.tar.gz"
@@ -23,7 +24,7 @@ build() {
 install_deps() {
   pkgs="gnupg pass xclip bspwm sxhkd python-pywal xorg-xinit xorg-server
     base-devel feh picom maim zathura zathura-pdf-mupdf fdm rxvt-unicode
-    imagemagick rofi ranger youtubedl unzip ffmpegthumbnailer tmux xss-lock
+    imagemagick rofi ranger youtube-dl unzip ffmpegthumbnailer tmux xss-lock
     zsh zsh-autosuggestions zsh-syntax-highlighting"
 }
 
@@ -56,7 +57,7 @@ usage() {
   echo " --sound-pulse  Install deps for PulseAudio"
   echo " --sound-alsa   Install deps for ALSA"
   echo " --extra-deps   Install other dependencies"
-  echo " --vim          Install deps for vim"
+  echo " --nvim          Install deps for neovim"
   echo " --emacs        Install deps for emacs"
 }
 
