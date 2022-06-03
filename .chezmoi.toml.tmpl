@@ -1,0 +1,34 @@
+{{- /* Github account (if any) */}}
+{{- $github_username := promptString "Git username for the author/committer" -}}
+{{- $github_email := promptString "Git email address for the author/committer" -}}
+
+{{- /* GPG, ID for key [C] [S] [E] */}}
+{{- $key_recipient := false -}}
+{{- $key_sign := false -}}
+{{- $key_encrypt := false -}}
+
+{{- $soundcard := "0" -}}
+{{- $fullpath := printf "%s/%s" .chezmoi.sourceDir "scripts/board_name.sh" -}}
+{{- $board_name := output $fullpath | trim -}}
+{{- if eq $board_name "W51XTU" -}}
+{{- $soundcard = "hw:Pro" -}}
+{{- end -}}
+
+[gpg]
+  recipient = "{{ $key_recipient }}"
+[data]
+  name = "{{ $github_username }}"
+  [data.github] # used to generate the ~/.gitconfig
+    email = "{{ $github_email }}"
+    name = "{{ $github_username }}"
+  [data.system]
+    editor = "nvim" # favorite editor, vim, emacs, etc...
+    sound = "pulseaudio" # set alsa or pulseaudio here
+
+    # Sound card to use, default is 0
+    # pulseaudio -> pactl list sinks short
+    # alsa -> cat /proc/asound/cards
+    soundcard = "{{ $soundcard }}"
+[git]
+  autoCommit = true
+  autoPush = true

@@ -1,1 +1,3 @@
 bin/chezmoi
+*.swp
+*.tar.gz
