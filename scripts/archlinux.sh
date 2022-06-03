@@ -3,7 +3,7 @@
 set -o errexit -o nounset
 
 ins="pacman -S --noconfirm --needed"
-pkgs_aur="xst-git nerd-fonts-iosevka cava python-ueberzug i3lock-color"
+pkgs_aur="ly betterlockscreen"
 
 build() {
   PKG_URL="https://aur.archlinux.org/cgit/aur.git/snapshot/$1.tar.gz"
