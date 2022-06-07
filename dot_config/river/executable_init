@@ -12,6 +12,8 @@
 
 riverctl spawn pywal -R
 
+bash $HOME/.config/river/autostart
+
 # Super+Z to start an instance of foot (https://codeberg.org/dnkl/foot)
 riverctl map normal Super Z spawn foot
 
@@ -20,6 +22,7 @@ riverctl map normal Super X close
 
 # Super+Shift+Q to exit river
 riverctl map normal Super+Shift Q exit
+
 
 # Super+J and Super+K to focus the next/previous view in the layout stack
 riverctl map normal Super J focus-view next
@@ -96,8 +99,11 @@ all_tags=$(((1 << 32) - 1))
 riverctl map normal Super 0 set-focused-tags $all_tags
 riverctl map normal Super+Shift 0 set-view-tags $all_tags
 
-# Super+Space to toggle float
-riverctl map normal Super Space toggle-float
+# Super+Space to open wofi
+riverctl map normal Super Space wofi --show run
+
+# Super+T to toggle float
+riverctl map normal Super T toggle-float
 
 # Super+F to toggle fullscreen
 riverctl map normal Super F toggle-fullscreen
