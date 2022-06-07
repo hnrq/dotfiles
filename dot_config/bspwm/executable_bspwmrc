@@ -4,6 +4,8 @@ PANEL_HEIGHT=24
 export gap
 export PANEL_HEIGHT
 
+pgrep -x sxhkd > /dev/null || sxhkd &
+
 #This creates negative padding equal to window gap so that gaps are shown only between windows and not on desktop edges.
 bspc config window_gap $gap
 bspc config top_padding $(PANEL_HEIGHT-$gap)
