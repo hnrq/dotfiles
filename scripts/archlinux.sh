@@ -3,7 +3,7 @@
 set -o errexit -o nounset
 
 ins="pacman -S --noconfirm --needed"
-pkgs_aur="ly betterlockscreen google-chrome"
+pkgs_aur="yay ly google-chrome visual-studio-code-bin"
 pkgs=""
 
 build() {
@@ -22,8 +22,8 @@ build() {
 }
 
 install_deps() {
-  pkgs="gnupg pass xclip bspwm sxhkd python-pywal xorg-xinit xorg-server
-    base-devel feh picom maim zathura zathura-pdf-mupdf fdm rxvt-unicode
+  pkgs="gnupg pass xclip bspwm sxhkd python-pywal xorg-xinit xorg-server xcape
+    base-devel feh picom maim zathura zathura-pdf-mupdf fdm rxvt-unicode sxhkd
     imagemagick rofi ranger youtube-dl unzip ffmpegthumbnailer tmux xss-lock
     zsh zsh-autosuggestions zsh-syntax-highlighting"
 }

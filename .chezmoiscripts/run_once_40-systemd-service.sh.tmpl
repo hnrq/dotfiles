@@ -30,7 +30,7 @@ if hash systemctl 2>/dev/null ; then
     if ! $systemctl is-active $service ; then $systemctl start $service ; fi
   done
 
-  services_system="ly betterlockscreen@$USER"
+  services_system="ly"
   systemctl="sudo systemctl"
   for service in $services_system ; do
     echo -n "$service..."
