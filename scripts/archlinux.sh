@@ -25,7 +25,7 @@ install_deps() {
   pkgs="gnupg pass xclip bspwm sxhkd python-pywal xorg-xinit xorg-server xcape
     base-devel feh picom maim zathura zathura-pdf-mupdf fdm rxvt-unicode sxhkd
     imagemagick rofi ranger youtube-dl unzip ffmpegthumbnailer tmux xss-lock
-    zsh zsh-autosuggestions zsh-syntax-highlighting polybar picom"
+    zsh zsh-autosuggestions zsh-syntax-highlighting polybar picom alsa-utils"
 }
 
 install_pulse() {
