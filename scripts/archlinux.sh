@@ -30,7 +30,7 @@ install_deps() {
 }
 
 install_pulse() {
-  pkgs="$pkgs pulseaudio firefox"
+  pkgs="$pkgs pulseaudio"
 }
 
 install_alsa() {
