@@ -26,7 +26,7 @@ install_deps() {
     base-devel feh picom maim zathura zathura-pdf-mupdf fdm rxvt-unicode sxhkd
     imagemagick rofi ranger youtube-dl unzip ffmpegthumbnailer tmux xss-lock
     zsh zsh-autosuggestions zsh-syntax-highlighting polybar picom alsa-utils
-    alsa-plugins alsa-lib nodejs network-tools wpa_supplicant"
+    alsa-plugins alsa-lib nodejs wpa_supplicant iw"
 }
 
 install_pulse() {
