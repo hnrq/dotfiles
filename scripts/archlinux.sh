@@ -3,7 +3,7 @@
 set -o errexit -o nounset
 
 ins="pacman -S --noconfirm --needed"
-pkgs_aur="yay ly google-chrome visual-studio-code-bin"
+pkgs_aur="yay ly google-chrome visual-studio-code-bin ttf-unifont"
 pkgs=""
 
 build() {
@@ -35,7 +35,6 @@ install_pulse() {
 
 install_alsa() {
   pkgs="$pkgs alsa-utils alsa-plugins ladspa swh-plugins libsamplerate"
-  pkgs_aur="$pkgs_aur brave-bin"
 }
 
 install_emacs() {
