@@ -52,6 +52,10 @@ install_extra_deps() {
   done
 }
 
+post_install() {
+  nvim --headless +PlugInstall +qall;
+}
+
 usage() {
   printf "\nUsage:\n"
   echo " --deps         Install dependencies"

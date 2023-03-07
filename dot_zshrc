@@ -10,3 +10,5 @@ zstyle :compinstall filename '/home/dalborga/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+source .profile
