@@ -4,7 +4,7 @@ PANEL_HEIGHT=24
 export gap
 export PANEL_HEIGHT
 
-source $HOME/.profile
+source ${HOME}/.profile
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 ${HOME}/.config/bspwm/autostart &
