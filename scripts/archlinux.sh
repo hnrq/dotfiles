@@ -22,11 +22,12 @@ build() {
 }
 
 install_deps() {
-  pkgs="gnupg pass xclip bspwm sxhkd python-pywal xorg-xinit xorg-server xcape
-    base-devel feh picom maim zathura zathura-pdf-mupdf fdm rxvt-unicode sxhkd
-    imagemagick rofi ranger youtube-dl unzip ffmpegthumbnailer tmux xss-lock
-    zsh zsh-autosuggestions zsh-syntax-highlighting polybar picom alsa-utils
-    alsa-plugins alsa-lib nodejs wpa_supplicant iw"
+  pkgs="gnupg pass xclip bspwm sxhkd python-pywal xorg-xinit 
+    xorg-server xcape xorg-xsetroot base-devel feh picom maim
+    zathura zathura-pdf-mupdf fdm rxvt-unicode sxhkd imagemagick
+    rofi ranger youtube-dl unzip ffmpegthumbnailer tmux xss-lock
+    zsh zsh-autosuggestions zsh-syntax-highlighting polybar picom
+    alsa-utils alsa-plugins alsa-lib nodejs dhcpcd wpa_supplicant iw"
 }
 
 install_pulse() {
