@@ -39,6 +39,8 @@ bspc config focus_follows_pointer true
 #Settings for manual splitting
 bspc config split_ratio         0.50
 
+# Automatically query for connected Displays and add 4 monitors for each
+
 MONITORS=$(bspc query -M --names)
 
 set -- $MONITORS
