@@ -19,5 +19,6 @@ bye() {
 
 msg "Execute $0..."
 
-localectl --no-convert set-x11-keymap us_intl
-localectl set-locale LANG=pt_BR.UTF8
+sudo locale-gen "pt_BR.UTF-8"
+sudo localectl --no-convert set-x11-keymap us_intl
+sudo localectl set-locale LANG=pt_BR.UTF-8
