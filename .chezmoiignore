@@ -1,6 +1,7 @@
 README.md
 LICENSE
 Makefile
+.config/yay
 
 scripts
 .chezmoiscripts
