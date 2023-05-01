@@ -28,7 +28,8 @@ install_deps() {
     zathura zathura-pdf-mupdf fdm rxvt-unicode sxhkd imagemagick
     rofi ranger youtube-dl unzip ffmpegthumbnailer tmux xss-lock
     zsh zsh-autosuggestions zsh-syntax-highlighting polybar picom
-    alsa-utils alsa-plugins alsa-lib nodejs iwd terminus-font iw"
+    alsa-utils alsa-plugins alsa-lib nodejs iwd terminus-font 
+    networkmanager network-manager-applet"
 }
 
 install_pulse() {
