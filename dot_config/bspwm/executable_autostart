@@ -19,8 +19,5 @@
 	feh --bg-scale `cat $HOME/.cache/wal/wal` &
 	$HOME/.config/polybar/launch.sh &
 
-## Start iwgtk
-	iwgtk -i
-
 ## Map super key to trigger rofi when used alone
 	xcape -e 'Super_L=Super_L|Shift_L|space' &

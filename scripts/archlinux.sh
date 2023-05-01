@@ -4,7 +4,7 @@ set -o errexit -o nounset
 
 ins="pacman -S --noconfirm --needed"
 pkgs_aur="yay ly google-chrome visual-studio-code-bin ttf-unifont
-  ttf-icomoon-feather iwgtk"
+  ttf-icomoon-feather"
 pkgs=""
 
 build() {
