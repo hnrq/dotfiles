@@ -3,7 +3,8 @@
 set -o errexit -o nounset
 
 ins="pacman -S --noconfirm --needed"
-pkgs_aur="yay ly google-chrome visual-studio-code-bin ttf-unifont ttf-icomoon-feather"
+pkgs_aur="yay ly google-chrome visual-studio-code-bin ttf-unifont
+  ttf-icomoon-feather iwgtk"
 pkgs=""
 
 build() {
@@ -27,7 +28,7 @@ install_deps() {
     zathura zathura-pdf-mupdf fdm rxvt-unicode sxhkd imagemagick
     rofi ranger youtube-dl unzip ffmpegthumbnailer tmux xss-lock
     zsh zsh-autosuggestions zsh-syntax-highlighting polybar picom
-    alsa-utils alsa-plugins alsa-lib nodejs dhcpcd wpa_supplicant iw"
+    alsa-utils alsa-plugins alsa-lib nodejs iwd terminus-font iw"
 }
 
 install_pulse() {
