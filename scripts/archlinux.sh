@@ -36,6 +36,10 @@ install_pulse() {
   pkgs="$pkgs pulseaudio"
 }
 
+install_xsecurelock() {
+ pkgs="$pkgs xsecurelock"
+}
+
 install_alsa() {
   pkgs="$pkgs alsa-utils alsa-plugins ladspa swh-plugins libsamplerate"
 }
