@@ -29,15 +29,11 @@ install_deps() {
     rofi ranger youtube-dl unzip ffmpegthumbnailer tmux xss-lock
     zsh zsh-autosuggestions zsh-syntax-highlighting polybar picom
     alsa-utils alsa-plugins alsa-lib nodejs iwd terminus-font 
-    networkmanager network-manager-applet"
+    networkmanager network-manager-applet xsecurelock xscreensaver"
 }
 
 install_pulse() {
   pkgs="$pkgs pulseaudio"
-}
-
-install_xsecurelock() {
- pkgs="$pkgs xsecurelock"
 }
 
 install_alsa() {
