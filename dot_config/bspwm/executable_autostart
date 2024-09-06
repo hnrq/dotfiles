@@ -26,4 +26,4 @@
 	xcape -e 'Super_L=Super_L|Shift_L|space' &
 
 ## Start XSecureLock
-	./$HOME/.config/screenlock.sh
+	$HOME/.config/screenlock.sh
