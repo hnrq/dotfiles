@@ -189,3 +189,6 @@ super + shift + Escape
 # In case bspwmrc fails to execute/you wish have plugged in a new monitor
 super + shift + r
   bspwmrc
+
+super + l
+  $HOME/.config/screenlock.sh
