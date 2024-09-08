@@ -191,4 +191,4 @@ super + shift + r
   bspwmrc
 
 super + l
-  $HOME/.config/screenlock.sh
+  xset s activate
