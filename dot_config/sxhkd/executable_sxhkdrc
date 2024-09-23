@@ -149,11 +149,11 @@ super + shift + space
 #  dmenu_recent -h $PANEL_HEIGHT -fn 'xos4 Terminus:size=15' -i
 
 super + shift + Return
-# urxvt
-  warp-terminal
+  urxvt
+#  warp-terminal
 super + z
-# urxvt
-  warp-terminal
+  urxvt
+#  warp-terminal
         
 super + e
   thunar
