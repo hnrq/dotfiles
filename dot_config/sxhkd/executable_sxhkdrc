@@ -2,7 +2,7 @@
 #
 # Cleanly quit bspwm
 super + shift + q
-bspc quit 1
+  bspc quit 1
 
 # Print screen
 Print
@@ -149,8 +149,8 @@ super + shift + space
 super + shift + Return
   urxvt
 #  warp-terminal
-  super + z
-urxvt
+super + z
+  urxvt
 #  warp-terminal
 
 super + e
