@@ -29,7 +29,8 @@ install_deps() {
     rofi ranger youtube-dl unzip ffmpegthumbnailer tmux xss-lock
     zsh zsh-autosuggestions zsh-syntax-highlighting polybar picom
     alsa-utils alsa-plugins alsa-lib nodejs iwd terminus-font 
-    networkmanager network-manager-applet xsecurelock xscreensaver"
+    networkmanager network-manager-applet xsecurelock xscreensaver noto-fonts-sc 
+    fcitx5 fcitx5-chinese-addons fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-configtool"
 }
 
 install_pulse() {
