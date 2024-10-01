@@ -27,3 +27,6 @@
 
 ## Setup Screen Lock
 	$HOME/.config/screenlock.sh &
+
+## Setup keyboard
+fcitx5
