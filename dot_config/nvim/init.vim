@@ -20,13 +20,14 @@ Plug 'github/copilot.vim'
 
 call plug#end()
 
+
 let g:ale_fixers = {
-\ 'javascript': ['prettier', 'eslint'],
-\ 'typescript': ['prettier', 'eslint'],
-\ 'css': ['prettier', 'eslint'],
-\ 'scss': ['prettier', 'eslint'],
-\ 'javascriptreact': ['prettier', 'eslint'],
-\ 'typescriptreact': ['prettier', 'eslint'],
+\ 'javascript': ['biome', 'eslint'],
+\ 'typescript': ['biome', 'eslint'],
+\ 'css': ['biome', 'eslint'],
+\ 'scss': ['biome', 'eslint'],
+\ 'javascriptreact': ['biome', 'eslint'],
+\ 'typescriptreact': ['biome', 'eslint'],
 \}
 
 let g:ale_fix_on_save = 1
