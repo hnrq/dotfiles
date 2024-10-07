@@ -10,15 +10,24 @@ Plug 'dense-analysis/ale'
 Plug 'dylanaraps/wal.vim'
 Plug 'tpope/vim-sleuth'
 Plug 'sheerun/vim-polyglot'
-Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'neoclide/coc.nvim'
-Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/space-vim-theme'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'github/copilot.vim'
 
 call plug#end()
+
+let b:ale_fixers = {
+  'javascript': ['prettier', 'eslint'],
+  'typescript': ['prettier', 'eslint'],
+  'css': ['prettier', 'eslint'],
+  'scss': ['prettier', 'eslint'],
+  'javascriptreact': ['prettier', 'eslint'],
+  'typescriptreact': ['prettier', 'eslint'],
+}
+
+let b:ale_fix_on_save = 1
+let g:ale_linters_explicit = 1
