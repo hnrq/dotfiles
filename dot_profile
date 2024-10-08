@@ -2,4 +2,13 @@
 if [ -d "$HOME/bin" ] ; then
   PATH="$HOME/bin:$PATH"
 fi 
+
+# Ruby
 export EDITOR=nvim
+export GEM_HOME="$(gem env user_gemhome)"
+
+# Android
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH="$PATH:$GEM_HOME/bin"
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
