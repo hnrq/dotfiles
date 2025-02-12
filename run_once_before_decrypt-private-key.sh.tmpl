@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ ! -f "/home/dalborga/.config/chezmoi/key.txt" ]; then
+    mkdir -p "/home/dalborga/.config/chezmoi"
+    chezmoi age decrypt --output "/home/dalborga/.config/chezmoi/key.txt" --passphrase "{{ .chezmoi.sourceDir }}/key.txt.age"
+    chmod 600 "/home/dalborga/.config/chezmoi/key.txt"
+fi
