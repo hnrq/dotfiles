@@ -1,0 +1,10 @@
+#! /bin/sh
+
+# Set monitor order
+xrandr --output DP-4 --auto --output DP-2 --auto --left-of DP-4
+
+i=1
+for monitor in $(bspc query -M --names); do
+    bspc monitor "$monitor" -d $i $((i+1)) $((i+2))
+    i=$((i+3))
+done
