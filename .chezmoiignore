@@ -2,6 +2,7 @@ README.md
 LICENSE
 Makefile
 .config/yay
+key.txt.age
 
 scripts
 .chezmoiscripts
