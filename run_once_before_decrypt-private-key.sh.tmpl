@@ -1,7 +1,15 @@
 #!/bin/sh
 
+
 if [ ! -f "/home/dalborga/.config/chezmoi/key.txt" ]; then
     mkdir -p "/home/dalborga/.config/chezmoi"
+    
+    if [ ! command -v bw 2>&1 >/dev/null ]; then
+        npm i -g @bitwarden/cli
+	bw login
+    fi
+    
+
     chezmoi age decrypt --output "/home/dalborga/.config/chezmoi/key.txt" --passphrase "{{ .chezmoi.sourceDir }}/key.txt.age"
     chmod 600 "/home/dalborga/.config/chezmoi/key.txt"
 fi

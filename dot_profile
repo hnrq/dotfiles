@@ -1,11 +1,10 @@
-# set PATH so it includes user's private bin if it exists 
+c\<F3>
 if [ -d "$HOME/bin" ] ; then
   PATH="$HOME/bin:$PATH"
-fi 
+fi
 
 # Ruby
 export EDITOR=nvim
-export GEM_HOME="$(gem env user_gemhome)"
 
 # Android
 export ANDROID_HOME=$HOME/Android/Sdk
