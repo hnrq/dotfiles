@@ -24,13 +24,14 @@ build() {
 
 install_deps() {
   pkgs="gnupg pass xclip bspwm sxhkd python-pywal xorg-xinit
-    xorg-server xcape xorg-xsetroot base-devel feh picom maim
-    zathura zathura-pdf-mupdf fdm rxvt-unicode sxhkd imagemagick
-    rofi ranger youtube-dl unzip ffmpegthumbnailer tmux xss-lock
-    zsh zsh-autosuggestions zsh-syntax-highlighting polybar picom
-    alsa-utils alsa-plugins alsa-lib nodejs iwd terminus-font
-    networkmanager network-manager-applet xsecurelock xscreensaver noto-fonts-sc
-    fcitx5 fcitx5-gtk fcitx5-chinese-addons fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-configtool"
+    xorg-server xorg-xrandr xcape xorg-xsetroot base-devel feh
+    picom maim zathura zathura-pdf-mupdf fdm rxvt-unicode sxhkd
+    imagemagick rofi ranger youtube-dl unzip ffmpegthumbnailer tmux
+    xss-lock zsh zsh-autosuggestions zsh-syntax-highlighting polybar
+    picom alsa-utils alsa-plugins alsa-lib nodejs iwd terminus-font
+    networkmanager network-manager-applet xsecurelock xscreensaver
+    noto-fonts-sc fcitx5 fcitx5-gtk fcitx5-chinese-addons
+    fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-configtool"
 }
 
 install_pulse() {
