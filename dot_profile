@@ -1,4 +1,4 @@
-if [ -d "$HOME/bin" ] ; then
+c\<F3>
   PATH="$HOME/bin:$PATH"
 fi
 
@@ -10,3 +10,8 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export PATH="$PATH:$GEM_HOME/bin"
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# fcitx
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+SDL_IM_MODULE=fcitx
