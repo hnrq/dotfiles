@@ -31,7 +31,8 @@ install_deps() {
     picom alsa-utils alsa-plugins alsa-lib nodejs iwd terminus-font
     networkmanager network-manager-applet xsecurelock xscreensaver
     noto-fonts-sc fcitx5 fcitx5-gtk fcitx5-chinese-addons
-    fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-configtool"
+    fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-configtool hyprland hyprpaper
+    waybar"
 }
 
 install_pulse() {

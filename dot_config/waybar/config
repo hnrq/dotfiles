@@ -1,0 +1,59 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["cpu", "memory"],
+    "modules-right": ["pulseaudio", "network", "clock", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "default": ""
+        }
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 0.5
+    },
+    "memory": {
+        "format": " {}%",
+        "interval": 3
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Muted",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "scroll-step": 5
+    },
+    "network": {
+        "format-wifi": " {essid} {bandwidthDownBytes} {bandwidthUpBytes}",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": " Not Connected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "interval": 1
+    },
+    "clock": {
+        "format": " {:%I:%M %p}",
+        "format-alt": " {:%Y-%m-%d}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 3
+    }
+}

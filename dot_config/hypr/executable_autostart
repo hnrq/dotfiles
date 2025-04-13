@@ -1,0 +1,6 @@
+#!/bin/sh
+fc-cache -fv &
+waybar &
+$HOME/.config/screenlock.sh &
+hyprpaper &
+fcitx5 &

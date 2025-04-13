@@ -1,0 +1,61 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Ubuntu Condensed, icomoon-feather, xos4 Terminus;
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #222;
+    color: #222;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #222;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inherit;
+    border-bottom: 2px solid #222;
+}
+
+#workspaces button.focused {
+    background-color: #222;
+    border-bottom: 2px solid #1e88e5;
+}
+
+#workspaces button.urgent {
+    background-color: #e53935;
+}
+
+#cpu, #memory, #pulseaudio, #network, #clock, #tray {
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+#cpu {
+    color: #43a047;
+}
+
+#memory {
+    color: #fdd835;
+}
+
+#pulseaudio {
+    color: #1e88e5;
+}
+
+#network {
+    color: #00897b;
+}
+
+#clock {
+    color: #8e24aa;
+}
