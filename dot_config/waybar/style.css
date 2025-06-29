@@ -7,7 +7,7 @@
 
 window#waybar {
     background-color: transparent;
-    color: #c0caf5;
+    color: @foreground;
     transition: background-color .5s;
 }
 
@@ -15,10 +15,9 @@ window#waybar {
 .modules-center,
 .modules-right
 {
-    background: rgba(0, 0, 8, .7);
+    background: @background;
     margin: 5px 10px;
     padding: 0 5px;
-    border-radius: 15px;
 }
 .modules-left {
     padding: 0;
@@ -46,7 +45,6 @@ window#waybar {
 #language,
 #mpd {
     padding: 0 10px;
-    border-radius: 15px;
 }
 
 #clock:hover,
@@ -67,29 +65,25 @@ window#waybar {
 #power-profiles-daemon:hover,
 #language:hover,
 #mpd:hover {
-    background: rgba(26, 27, 38, 0.9);
+    background: @bg_lighter;
 }
 
 
 #workspaces button {
   background: transparent;
-  font-family:
-    SpaceMono Nerd Font,
-    feather;
   font-weight: 900;
   font-size: 13pt;
-  color: #c0caf5;
+  color: @foreground;
   border:none;
-  border-radius: 15px;
 }
 
 #workspaces button.active {
-    background: #13131d;
+    background: @bg_lightest;
 }
 
 #workspaces button:hover {
-  background: #11111b;
-  color: #cdd6f4;
+  background: @bg_lighter;
+  color: @foreground;
   box-shadow: none;
 }
 
@@ -98,7 +92,4 @@ window#waybar {
     padding: 0 10px;
     font-size: 25px;
     transition: color .5s;
-}
-#custom-arch:hover {
-    color: #1793d1;
 }

@@ -1,0 +1,27 @@
+
+@define-color foreground #FEEFF0;
+@define-color background alpha(#150E11,0.05);
+
+/* Lighter color variants */
+@define-color fg_lighter #FFFFFF; /* A pure white, as the original foreground is already very light */
+@define-color bg_lighter alpha(#150E11, 0.10); /* A more opaque version of the background color */
+@define-color bg_lightest alpha(#150E11, 0.15); /* A more opaque version of the background color */
+
+@define-color cursor #FEEFF0;
+
+@define-color color0 #3D373A;
+@define-color color1 #220615;
+@define-color color2 #08432C;
+@define-color color3 #CE2E9E;
+@define-color color4 #0881BC;
+@define-color color5 #C1E177;
+@define-color color6 #FCD0D3;
+@define-color color7 #F5DFE1;
+@define-color color8 #AC9C9D;
+@define-color color9 #220615;
+@define-color color10 #08432C;
+@define-color color11 #CE2E9E;
+@define-color color12 #0881BC;
+@define-color color13 #C1E177;
+@define-color color14 #FCD0D3;
+@define-color color15 #F5DFE1;
