@@ -4,3 +4,4 @@ waybar &
 $HOME/.config/screenlock.sh &
 hyprpaper &
 fcitx5 &
+swww-daemon &
