@@ -1,7 +1,7 @@
 @define-color foreground #DAF0E7;
-@define-color background alpha(#201514,0.05);
-@define-color backgroundLighter alpha(#201514, 0.10); /* A more opaque version of the background color */
-@define-color backgroundLightest alpha(#201514, 0.15); /* A more opaque version of the background color */
+@define-color background #201514;
+@define-color backgroundLighter #201514; /* A more opaque version of the background color */
+@define-color backgroundLightest #201514; /* A more opaque version of the background color */
 @define-color cursor #828B7F;
 
 @define-color color0 #483B3B;
