@@ -2,5 +2,5 @@ window-decoration = server
 font-family = Unifont
 font-family-bold = Unifont
 font-size = 13
-theme = wallust
+theme = wallust.conf
 background-opacity = 0.8
