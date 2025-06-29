@@ -3,9 +3,8 @@
 @define-color background alpha(#150E11,0.05);
 
 /* Lighter color variants */
-@define-color fg_lighter #FFFFFF; /* A pure white, as the original foreground is already very light */
-@define-color bg_lighter alpha(#150E11, 0.10); /* A more opaque version of the background color */
-@define-color bg_lightest alpha(#150E11, 0.15); /* A more opaque version of the background color */
+@define-color backgroundLighter alpha(#150E11, 0.10); /* A more opaque version of the background color */
+@define-color backgroundLightest  alpha(#150E11, 0.15); /* A more opaque version of the background color */
 
 @define-color cursor #FEEFF0;
 
