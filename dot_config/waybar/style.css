@@ -65,7 +65,7 @@ window#waybar {
 #power-profiles-daemon:hover,
 #language:hover,
 #mpd:hover {
-    background: @bg_lighter;
+    background: @backgroundLighter;
 }
 
 
@@ -78,11 +78,11 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background: @bg_lightest;
+    background: @backgroundLightest;
 }
 
 #workspaces button:hover {
-  background: @bg_lighter;
+  background: @backgroundLighter;
   color: @foreground;
   box-shadow: none;
 }
