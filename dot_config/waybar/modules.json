@@ -34,17 +34,17 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [" ", " ", " "]
         },
         "on-click": "pavucontrol"
     },
     "network": {
         "format-wifi": "   {bandwidthDownBits}",
         "format-ethernet": "󰈀  {bandwidthDownBits}",
-        // "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-	// "on-click": "sh ~/scripts/rofi-wifi-menu/rofi-wifi-menu.sh"
+	      "on-click": "ghostty -e nmtui"
 
     },
     "cpu": {
