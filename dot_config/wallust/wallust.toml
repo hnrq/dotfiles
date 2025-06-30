@@ -1,6 +1,7 @@
 backend = "fastresize"
 color_space = "lch"
 palette = "dark"
+check_contrast = true
 
 [templates]
 rofi.template = 'colors-rofi.rasi'
