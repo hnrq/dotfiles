@@ -12,7 +12,6 @@
     ],
     "modules-center": [
         "cpu",
-        "cava",
         "memory"
     ],
     "modules-right": [
