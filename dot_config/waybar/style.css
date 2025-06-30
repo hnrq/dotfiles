@@ -1,5 +1,4 @@
 @import "colors.css";
-@define border_radius 5px;
 
 * {
     /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
@@ -19,7 +18,7 @@ window#waybar {
 tooltip {
     background: alpha(@background, 0.7);
     margin-top: 10px;
-    border-radius: @border_radius;
+    border-radius: 5px;
 }
 
 box.module {
@@ -31,7 +30,7 @@ box.module {
 .modules-center,
 .modules-right {
   background: @background;
-  border-radius: @border_radius;
+  border-radius: 5px;
   padding: 4px 8px;
 }
 
@@ -41,7 +40,7 @@ box.module {
   font-size: 13pt;
   color: @foreground;
   padding: 2px 8px;
-  border-radius: @border_radius;
+  border-radius: 5px;
   border:none;
 }
 
