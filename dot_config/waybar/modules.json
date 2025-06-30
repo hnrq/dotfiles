@@ -44,19 +44,19 @@
     },
     "network": {
         "format-wifi": "   {essid} ({signalStrength}%)",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-ethernet": "ifname",
+        // "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-	"on-click": "sh ~/scripts/rofi-wifi-menu/rofi-wifi-menu.sh"
+	// "on-click": "sh ~/scripts/rofi-wifi-menu/rofi-wifi-menu.sh"
 
     },
     "cpu": {
-        "format": "  {usage}%",
+        "format": "{usage}%",
         "tooltip": true
     },
     "memory": {
-        "format": "  {}%",
+        "format": "{}%",
 	"tooltip": true
     },
     "temperature": {

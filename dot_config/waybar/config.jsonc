@@ -1,7 +1,8 @@
 // -*- mode: jsonc -*-
 {
-    "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
+    "padding-left": 8,
+    "padding-right": 8,
     "margin": 10,
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -10,21 +11,17 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "hyprland/window"
+        "clock"
     ],
     "tray": {
-        "spacing": 10,
-        "tooltip": false
+        "tooltip": true
     },
     "modules-right": [
-        "idle_inhibitor",
         "pulseaudio",
         "network",
         "cpu",
         "memory",
-        "temperature",
         "battery",
-        "clock"
     ],
     //Modules configuration
 

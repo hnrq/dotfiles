@@ -11,10 +11,15 @@ window#waybar {
     background: @background;
     color: @foreground;
     transition: background-color .5s;
+    padding: 0 10px;
 }
 
 tooltip {
     background: @background;
+}
+
+box.module {
+  padding: 0 10px;
 }
 
 #workspaces button {
