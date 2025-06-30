@@ -58,7 +58,7 @@
       "format": "{glyph}",
       "format-alt": "{glyph}{count}",
       "glyph": "󰊗 ",
-      "hide-not-running": true,
+      "hide-not-running": false,
       "use-icon": true,
       "icon-name": "input-gaming-symbolic",
       "icon-size": 20,
@@ -91,10 +91,10 @@
         },
         "format": "{icon}  {capacity}%",
         "format-full": "{icon}  {capacity}%",
-        "format-charging": "  {capacity}%",
-        "format-plugged": "  {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": " {capacity}%",
         "format-alt": "{time}  {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [" ", " ", " ", " ", " "]
     },
     "battery#bat2": {
         "bat": "BAT2"
