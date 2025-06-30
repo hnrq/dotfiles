@@ -3,8 +3,8 @@
 set -o errexit -o nounset
 
 ins="pacman -S --noconfirm --needed"
-pkgs_aur="yay ly google-chrome visual-studio-code-bin ttf-unifont
-  ttf-icomoon-feather"
+pkgs_aur="paru ly google-chrome visual-studio-code-bin ttf-unifont
+  waypaper wallust"
 pkgs=""
 
 build() {
@@ -23,16 +23,12 @@ build() {
 }
 
 install_deps() {
-  pkgs="gnupg pass xclip bspwm sxhkd python-pywal xorg-xinit
-    xorg-server xorg-xrandr xcape xorg-xsetroot base-devel feh
-    picom maim zathura zathura-pdf-mupdf fdm rxvt-unicode sxhkd
+  pkgs="gnupg pass base-devel ghostty
     imagemagick rofi ranger youtube-dl unzip ffmpegthumbnailer tmux
-    xss-lock zsh zsh-autosuggestions zsh-syntax-highlighting polybar
-    picom alsa-utils alsa-plugins alsa-lib nodejs iwd terminus-font
-    networkmanager network-manager-applet xsecurelock xscreensaver
-    noto-fonts-sc fcitx5 fcitx5-gtk fcitx5-chinese-addons
-    fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-configtool hyprland hyprpaper
-    waybar gamemode lib32-gamemode"
+    networkmanager network-manager-applet nodejs iwd swww
+    noto-fonts-sc fcitx5 fcitx5-gtk fcitx5-chinese-addons hyprlock
+    fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-configtool hyprland
+    waybar gamemode lib32-gamemode grim slurp wl-clipboard"
 }
 
 install_pulse() {
@@ -40,11 +36,7 @@ install_pulse() {
 }
 
 install_alsa() {
-  pkgs="$pkgs alsa-utils alsa-plugins ladspa swh-plugins libsamplerate"
-}
-
-install_emacs() {
-  pkgs="$pkgs ripgrep emacs jq"
+  pkgs="$pkgs alsa-utils alsa-plugins alsa-lib ladspa swh-plugins libsamplerate"
 }
 
 install_nvim() {
@@ -68,7 +60,6 @@ usage() {
   echo " --sound-alsa   Install deps for ALSA"
   echo " --extra-deps   Install other dependencies"
   echo " --nvim          Install deps for neovim"
-  echo " --emacs        Install deps for emacs"
 }
 
 ## CLI options
@@ -77,7 +68,6 @@ PULSE=false
 ALSA=false
 EXTRA=false
 NVIM=false
-EMACS=false
 
 if [ "$#" -eq 0 ] ; then usage ; exit 1 ; fi
 
@@ -88,7 +78,6 @@ while [ "$#" -gt 0 ] ; do
     --sound-alsa) ALSA=true ;;
     --extra-deps) EXTRA=true ;;
     --nvim) NVIM=true ;;
-    --emacs) EMACS=true ;;
     *) usage; exit 1 ;;
   esac
   shift
@@ -99,7 +88,6 @@ main() {
   "$PULSE" && install_pulse
   "$ALSA" && install_alsa
   "$NVIM" && install_nvim
-  "$EMACS" && install_emacs
 
   sudo $ins $pkgs
 
