@@ -1,4 +1,4 @@
-!#/sbin/sh
+#!/bin/sh
 wallust run $1
 
 # Reload applications
