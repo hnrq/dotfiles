@@ -11,26 +11,10 @@ window#waybar {
     background: @background;
     color: @foreground;
     transition: background-color .5s;
-    margin: 10px;
-}
-
-.modules-left,
-.modules-center,
-.modules-right
-{
-    margin: 5px 10px;
-    padding: 0 5px;
-}
-.modules-left {
-    padding: 0;
-}
-.modules-center {
-    padding: 0 10px;
 }
 
 tooltip {
     background: @background;
-    padding: 0 10px;
 }
 
 #workspaces button {
@@ -49,11 +33,4 @@ tooltip {
   background: @background;
   color: @foreground;
   box-shadow: none;
-}
-
-#custom-arch {
-    margin-left: 5px;
-    padding: 0 10px;
-    font-size: 25px;
-    transition: color .5s;
 }
