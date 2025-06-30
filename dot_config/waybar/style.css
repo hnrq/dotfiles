@@ -17,6 +17,8 @@ window#waybar {
 
 tooltip {
     background: alpha(@background, 0.7);
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 box.module {
