@@ -2,5 +2,5 @@
 wallust run $1
 
 # Reload applications
-makoctl reload
+makoctl reload &
 notify-send "Theme updated"
