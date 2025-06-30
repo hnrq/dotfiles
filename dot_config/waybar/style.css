@@ -3,7 +3,7 @@
 * {
     /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
     font-family: "Unifont";
-    font-size: 13px;
+    font-size: 14px;
     transition: background-color .3s ease-out;
 }
 
