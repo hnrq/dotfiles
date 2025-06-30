@@ -8,21 +8,16 @@
 }
 
 window#waybar {
-    background-color: transparent;
+    background: @background;
     color: @foreground;
     transition: background-color .5s;
     margin: 10px;
-}
-
-box.module {
-  background: @background;
 }
 
 .modules-left,
 .modules-center,
 .modules-right
 {
-    background: @background;
     margin: 5px 10px;
     padding: 0 5px;
 }
