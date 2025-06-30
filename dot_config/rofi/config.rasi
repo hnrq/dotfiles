@@ -11,5 +11,5 @@ configuration {
   display-combi: "Exec -> ";
 }
 
+@theme "~/.config/rofi/colors.rasi"
 @theme "~/.local/share/rofi/themes/onedark.rasi"
-@theme "~/.config/rofi/shared/colors.rasi"
