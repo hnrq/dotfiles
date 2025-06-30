@@ -1,7 +1,6 @@
 #!/bin/sh
 fc-cache -fv &
-$HOME/.config/waybar/launch.sh &
-$HOME/.config/screenlock.sh &
+waybar &
 hyprpaper &
 fcitx5 &
 swww-daemon &
