@@ -1,6 +1,7 @@
 // -*- mode: jsonc -*-
 {
     "position": "top", // Waybar position (top|bottom|left|right)
+    "layer": "top",
     "padding-left": 8,
     "padding-right": 8,
     "margin": 8,
