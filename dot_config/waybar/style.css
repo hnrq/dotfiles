@@ -39,7 +39,7 @@ box.module {
   font-weight: 900;
   font-size: 13pt;
   color: @foreground;
-  padding: 2px 8px;
+  padding: 4px;
   border-radius: 5px;
   border:none;
 }
