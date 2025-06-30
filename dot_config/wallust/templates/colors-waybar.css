@@ -1,7 +1,7 @@
 @define-color foreground {{foreground}};
-@define-color background {{background}};
-@define-color backgroundLighter {{background}}; /* A more opaque version of the background color */
-@define-color backgroundLightest {{background}}; /* A more opaque version of the background color */
+@define-color background alpha({{background}}, 0.05);
+@define-color backgroundLighter alpha({{background}}, 0.1); /* A more opaque version of the background color */
+@define-color backgroundLightest alpha({{background}}, 0.15); /* A more opaque version of the background color */
 @define-color cursor {{cursor}};
 
 @define-color color0 {{color0}};

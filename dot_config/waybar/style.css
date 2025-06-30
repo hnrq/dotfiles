@@ -46,11 +46,11 @@ tooltip {
 }
 
 #workspaces button.active {
-    background: @backgroundLightest;
+    background: @background;
 }
 
 #workspaces button:hover {
-  background: @backgroundLighter;
+  background: @background;
   color: @foreground;
   box-shadow: none;
 }
