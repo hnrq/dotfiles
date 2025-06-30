@@ -11,6 +11,7 @@ window#waybar {
     background-color: transparent;
     color: @foreground;
     transition: background-color .5s;
+    margin: 10px;
 }
 
 box.module {
