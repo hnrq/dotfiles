@@ -1,6 +1,6 @@
 #!/bin/sh
 fc-cache -fv &
-waybar &
+$HOME/.config/waybar/launch.sh &
 hyprpaper &
 fcitx5 &
 swww-daemon &
