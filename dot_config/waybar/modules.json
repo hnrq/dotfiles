@@ -21,41 +21,41 @@
         }
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "{icon}{volume}%",
         "format-bluetooth": "{icon}{volume}% {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
         "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
+            "headphone": " ",
             "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
             "default": [" ", " ", " "]
         },
         "on-click": "pavucontrol"
     },
     "network": {
-        "format-wifi": "   {bandwidthDownBits}",
-        "format-ethernet": "󰈀  {bandwidthDownBits}",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-wifi": "  {bandwidthDownBits}",
+        "format-ethernet": "󰈀 {bandwidthDownBits}",
+        "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
 	      "on-click": "ghostty -e nmtui"
 
     },
     "cpu": {
-        "format": " {usage}%",
+        "format": " {usage}%",
         "tooltip": true,
         "states": {
             "critical": 90
         }
     },
     "memory": {
-        "format": " {}%",
+        "format": " {}%",
         "tooltip": true,
         "states": {
             "critical": 90
