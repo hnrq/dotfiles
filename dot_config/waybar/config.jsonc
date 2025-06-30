@@ -3,7 +3,7 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     "padding-left": 8,
     "padding-right": 8,
-    "margin": 10,
+    "margin": 8,
     "spacing": 16, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
