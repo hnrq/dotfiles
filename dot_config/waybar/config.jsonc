@@ -12,13 +12,15 @@
     ],
     "modules-center": [
         "cpu",
+        "cava",
         "memory"
     ],
     "modules-right": [
         "pulseaudio",
         "network",
         "clock",
-        "battery"
+        "battery",
+        "gamemode"
     ],
     //Modules configuration
 
