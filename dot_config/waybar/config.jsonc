@@ -7,11 +7,16 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+        "tray",
         "hyprland/workspaces"
     ],
     "modules-center": [
         "hyprland/window"
     ],
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
     "modules-right": [
         "idle_inhibitor",
         "pulseaudio",
@@ -19,9 +24,7 @@
         "cpu",
         "memory",
         "temperature",
-        "hyprland/language",
         "battery",
-        "battery#bat2",
         "clock"
     ],
     //Modules configuration
