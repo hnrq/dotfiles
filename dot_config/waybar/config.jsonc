@@ -14,9 +14,6 @@
         "cpu",
         "memory"
     ],
-    "tray": {
-        "tooltip": true
-    },
     "modules-right": [
         "pulseaudio",
         "network",

@@ -1,11 +1,4 @@
 {
-    "custom/arch": {
-        "format": "󰣇",
-        "tooltip": true,
-        "tooltip-format": "btw"
-    },
-
-
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -16,6 +9,9 @@
             "active": "",
             "default": ""
         }
+    },
+    "tray": {
+      "spacing": 4,
     },
     "idle_inhibitor": {
         "format": "{icon}",
