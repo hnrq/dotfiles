@@ -16,7 +16,7 @@ window#waybar {
 }
 
 tooltip {
-    background: @background;
+    background-color: @background;
 }
 
 box.module {
