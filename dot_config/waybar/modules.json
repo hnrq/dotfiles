@@ -54,6 +54,17 @@
             "critical": 90
         }
     },
+    "gamemode": {
+      "format": "{glyph}",
+      "format-alt": "{glyph}{count}",
+      "glyph": "󰊗 ",
+      "hide-not-running": true,
+      "use-icon": true,
+      "icon-name": "input-gaming-symbolic",
+      "icon-size": 20,
+      "tooltip": true,
+      "tooltip-format": "Games running: {count}"
+    },
     "memory": {
         "format": " {}%",
         "tooltip": true,
