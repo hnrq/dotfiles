@@ -4,14 +4,15 @@
     "padding-left": 8,
     "padding-right": 8,
     "margin": 10,
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 16, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "tray",
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "clock"
+        "cpu",
+        "memory"
     ],
     "tray": {
         "tooltip": true
@@ -19,9 +20,8 @@
     "modules-right": [
         "pulseaudio",
         "network",
-        "cpu",
-        "memory",
-        "battery",
+        "clock",
+        "battery"
     ],
     //Modules configuration
 

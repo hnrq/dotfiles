@@ -32,7 +32,7 @@ install_deps() {
     networkmanager network-manager-applet xsecurelock xscreensaver
     noto-fonts-sc fcitx5 fcitx5-gtk fcitx5-chinese-addons
     fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-configtool hyprland hyprpaper
-    waybar"
+    waybar gamemode lib32-gamemode"
 }
 
 install_pulse() {

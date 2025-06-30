@@ -2,24 +2,34 @@
 
 * {
     /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
-    font-family: "Unifont";
-    font-size: 14px;
+    all: unset; /*this is really important to isolate waybar from gtk*/
+    font-family: "Unifont, Noto Sans, Symbols Nerd Font";
+    font-size: 15px;
     transition: background-color .3s ease-out;
 }
 
 window#waybar {
-    background: @background;
+    background: transparent;
     color: @foreground;
     transition: background-color .5s;
     padding: 0 10px;
 }
 
 tooltip {
-    background: @background;
+    background: alpha(@background, 0.7);
 }
 
 box.module {
   padding: 0 10px;
+}
+
+
+.modules-left,
+.modules-center,
+.modules-right {
+  background: @background;
+  border-radius: 5px;
+  padding: 4px 10px;
 }
 
 #workspaces button {
@@ -27,11 +37,14 @@ box.module {
   font-weight: 900;
   font-size: 13pt;
   color: @foreground;
+  padding: 2px 8px;
+  border-radius: 5px;
   border:none;
 }
 
 #workspaces button.active {
-    background: @background;
+    background: @foreground;
+    color: @background;
 }
 
 #workspaces button:hover {

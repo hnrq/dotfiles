@@ -25,8 +25,8 @@
         }
     },
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
-        "format-bluetooth": "{icon} {volume}%  {format_source}",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon}{volume}% {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
         "format-source": " {volume}%",
@@ -43,8 +43,8 @@
         "on-click": "pavucontrol"
     },
     "network": {
-        "format-wifi": "   {essid} ({signalStrength}%)",
-        "format-ethernet": "ifname",
+        "format-wifi": "   {bandwidthDownBits}",
+        "format-ethernet": "󰈀  {bandwidthDownBits}",
         // "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
@@ -52,12 +52,18 @@
 
     },
     "cpu": {
-        "format": "{usage}%",
-        "tooltip": true
+        "format": " {usage}%",
+        "tooltip": true,
+        "states": {
+            "critical": 90
+        }
     },
     "memory": {
-        "format": "{}%",
-	"tooltip": true
+        "format": " {}%",
+        "tooltip": true,
+        "states": {
+            "critical": 90
+        }
     },
     "temperature": {
         "interval": 10,
