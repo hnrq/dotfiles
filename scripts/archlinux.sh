@@ -24,11 +24,11 @@ build() {
 
 install_deps() {
   pkgs="gnupg pass base-devel ghostty
-    imagemagick rofi ranger youtube-dl unzip ffmpegthumbnailer tmux
+    imagemagick rofi ranger unzip ffmpegthumbnailer tmux
     networkmanager network-manager-applet nodejs iwd swww
-    noto-fonts-sc fcitx5 fcitx5-gtk fcitx5-chinese-addons hyprlock
+    fcitx5 fcitx5-gtk fcitx5-chinese-addons hyprlock
     fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-configtool hyprland
-    waybar gamemode lib32-gamemode grim slurp wl-clipboard"
+    waybar gamemode grim slurp wl-clipboard"
 }
 
 install_pulse() {
