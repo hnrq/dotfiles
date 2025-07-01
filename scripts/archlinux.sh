@@ -28,7 +28,7 @@ install_deps() {
     networkmanager network-manager-applet nodejs iwd swww
     fcitx5 fcitx5-gtk fcitx5-chinese-addons hyprlock
     fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-configtool hyprland
-    waybar gamemode grim slurp wl-clipboard"
+    waybar gamemode grim slurp wl-clipboard mako inotify-tools"
 }
 
 install_pulse() {
