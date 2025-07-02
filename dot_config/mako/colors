@@ -1,0 +1,25 @@
+layer=overlay
+background-color=#1A1E1C
+border-size=1
+border-color=#A2835C
+border-radius=0
+default-timeout=5000
+ignore-timeout=1
+font=Unifont, Hack Nerd Font 10
+text-color=#FFF7E5
+outer-margin=0,5,15,0
+anchor=bottom-right
+
+[urgency=high]
+border-color=#72BE44
+default-timeout=0
+
+[urgency=low]
+border-color=#454946
+
+[category=mpd]
+default-timeout=2000
+group-by=category
+
+[app-name="Steam"]
+invisible=1
