@@ -1,19 +1,13 @@
 * {
-  background:                 {color0};
-  background-alt:             {color8}; /* A slightly lighter, often grey, background */
-
-  /* Foregrounds */
-  foreground:                 {color15};
-  foreground-alt:             {color7}; /* A dimmer, often grey, foreground */
-
-  /* Accents & Selections */
-  primary:                    {color4}; /* A primary accent color (often blue/purple) */
-  secondary:                  {color5}; /* A secondary accent color */
-  accent:                     {color6}; /* A tertiary accent color (often cyan/aqua) */
-  urgent:                     {color1}; /* An urgent/error color (often red) */
-
-  /* Theme-wide settings */
+  background: {color0};
+  background-alt: {color8};
+  foreground: {color15};
+  foreground-alt: {color7};
+  primary: {color4};
+  secondary: {color5};
+  accent: {color6};
+  urgent: {color1};
   spacing: 0;
-  background-color:           transparent;
-  text-color:                 @foreground;
+  background-color: transparent;
+  text-color: @foreground;
 }
