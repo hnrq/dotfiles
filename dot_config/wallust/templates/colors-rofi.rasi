@@ -1,12 +1,12 @@
 * {
-  background: {color0};
-  background-alt: {color8};
-  foreground: {color15};
-  foreground-alt: {color7};
-  primary: {color4};
-  secondary: {color5};
-  accent: {color6};
-  urgent: {color1};
+  background: {{color0}};
+  background-alt: {{color8}};
+  foreground: {{color1}5};
+  foreground-alt: {{color7}};
+  primary: {{color4}};
+  secondary: {{color5}};
+  accent: {{color6}};
+  urgent: {{color1}};
   spacing: 0;
   background-color: transparent;
   text-color: @foreground;
