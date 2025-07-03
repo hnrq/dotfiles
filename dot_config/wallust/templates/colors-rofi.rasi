@@ -1,7 +1,7 @@
 * {
-  background: {{color0}};
+  background: {{background}};
   background-alt: {{color8}};
-  foreground: {{color1}5};
+  foreground: {{foreground}};
   foreground-alt: {{color7}};
   primary: {{color4}};
   secondary: {{color5}};
