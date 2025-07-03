@@ -17,9 +17,8 @@
 }
 
 window {
-  transparency: "real";
   fullscreen: true;
-  background-color: @background;
+  background-color: @primary;
 }
 
 mainbox {

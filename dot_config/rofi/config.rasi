@@ -7,7 +7,7 @@ configuration {
 	scroll-method: 1;
   display-ssh: "ssh";
   display-run: "Open ";
-  display-drun: "";
+  display-drun: "Open ";
   display-combi: "Exec -> ";
 }
 
@@ -15,5 +15,5 @@ window {
   fullscreen: true;
 }
 
-@import "./theme.rasi"
 @import "./colors.rasi"
+@theme "./theme.rasi"
