@@ -15,5 +15,5 @@ window {
   fullscreen: true;
 }
 
-@theme "~/.config/rofi/colors.rasi"
-@theme "~/.local/share/rofi/themes/onedark.rasi"
+@theme "./colors.rasi"
+@import "./theme.rasi"
