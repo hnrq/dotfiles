@@ -4,7 +4,7 @@ set -o errexit -o nounset
 
 ins="pacman -S --noconfirm --needed"
 pkgs_aur="paru ly google-chrome visual-studio-code-bin ttf-unifont
-  waypaper wallust"
+  waypaper wallust pwvucontrol"
 pkgs=""
 
 build() {
@@ -28,19 +28,8 @@ install_deps() {
     networkmanager network-manager-applet nodejs iwd swww
     fcitx5 fcitx5-gtk fcitx5-chinese-addons hyprlock
     fcitx5-pinyin-zhwiki fcitx5-qt fcitx5-configtool hyprland
-    waybar gamemode grim slurp wl-clipboard mako inotify-tools"
-}
-
-install_pulse() {
-  pkgs="$pkgs pulseaudio"
-}
-
-install_alsa() {
-  pkgs="$pkgs alsa-utils alsa-plugins alsa-lib ladspa swh-plugins libsamplerate"
-}
-
-install_nvim() {
-  pkgs="$pkgs neovim"
+    waybar gamemode grim slurp wl-clipboard mako inotify-tools
+    pipewire lib32-pipewire wireplumber pipewire-pulseaudio"
 }
 
 install_extra_deps() {
