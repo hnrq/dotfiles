@@ -15,5 +15,5 @@ window {
   fullscreen: true;
 }
 
-@theme "./colors.rasi"
 @import "./theme.rasi"
+@import "./colors.rasi"
