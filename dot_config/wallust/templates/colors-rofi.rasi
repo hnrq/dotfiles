@@ -1,5 +1,5 @@
 * {
-  background: {{background}}C0;
+  background: {{background}}DA;
   background-alt: {{color8}};
   foreground: {{foreground}};
   foreground-alt: {{color7}};
