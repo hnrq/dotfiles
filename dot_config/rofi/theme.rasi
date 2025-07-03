@@ -1,0 +1,82 @@
+@import "colors"
+
+window {
+    fullscreen:         true;
+    background-color:   var(background);
+    padding:            20% 25%;
+}
+
+
+mainbox {
+    spacing: 15px;
+}
+
+
+inputbar {
+    padding:            12px;
+    border-radius:      8px;
+    children:           [prompt, entry];
+}
+
+prompt {
+    text-color:         @secondary;
+    padding:            0 8px 0 0;
+}
+
+entry {
+    placeholder:        "Search...";
+    placeholder-color:  @foreground-alt;
+}
+
+
+listview {
+    dynamic:    true;
+    scrollbar:  false;
+    spacing:    8px;
+}
+
+element {
+    padding:            10px;
+    border-radius:      8px;
+    background-color:   transparent;
+}
+
+element-text {
+    text-color:         @foreground-alt;
+    highlight:          @accent;
+}
+
+element-icon {
+    size:               1.5em;
+    padding:            0 10px 0 0;
+}
+
+element selected {
+    background-color: @background-alt;
+    font: bold;
+}
+
+element.selected element-text {
+    text-color: @background;
+}
+
+element urgent, element selected urgent {
+    text-color: @urgent;
+}
+
+
+message {
+    padding:            12px;
+    border-radius:      8px;
+    background-color:   @background-alt;
+    border:             1px solid;
+    border-color:       @urgent;
+}
+
+button selected {
+    padding:            10px;
+    border-radius:      8px;
+    background-color:   @secondary;
+    text-color:         @background;
+}
+
