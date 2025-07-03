@@ -5,7 +5,7 @@ check_contrast = true
 
 [templates]
 rofi.template = 'colors-rofi.rasi'
-rofi.target = '~/.config/rofi/shared/colors.rasi'
+rofi.target = '~/.config/rofi/colors.rasi'
 waybar.template = 'colors-waybar.css'
 waybar.target = '~/.config/waybar/colors.css'
 hypr.template = 'colors-hypr.conf'
