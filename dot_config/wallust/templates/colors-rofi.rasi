@@ -1,19 +1,19 @@
 * {
-    selected-text:	{{color0}};
-    selected-background: {{color4}};
+  background:                 {color0};
+  background-alt:             {color8}; /* A slightly lighter, often grey, background */
 
-    prompt-text: {{color0}};
-    prompt-background: transparent;
+  /* Foregrounds */
+  foreground:                 {color15};
+  foreground-alt:             {color7}; /* A dimmer, often grey, foreground */
 
-    normal-text: {{foreground}};
-    normal-background: transparent;
+  /* Accents & Selections */
+  primary:                    {color4}; /* A primary accent color (often blue/purple) */
+  secondary:                  {color5}; /* A secondary accent color */
+  accent:                     {color6}; /* A tertiary accent color (often cyan/aqua) */
+  urgent:                     {color1}; /* An urgent/error color (often red) */
 
-    window-border: {{color4}};
-    window-background: {{color6}}0D;
-
-    scrollbar-filled: {{color4}};
-    scrollbar-empty: {{color0}};
-
-    error-message: {{color7}};
-    error-message-border: {{color15}};
+  /* Theme-wide settings */
+  spacing: 0;
+  background-color:           transparent;
+  text-color:                 @foreground;
 }
