@@ -5,4 +5,3 @@ if !has('gui_running') | set t_Co=256 | endif
 set wig+=vendor,log,logs,node_modules
 
 set background=dark
-colorscheme space_vim_theme
