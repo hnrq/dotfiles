@@ -1,6 +1,3 @@
--- Configuração para nvim-ufo usando lazy.nvim
--- Este ficheiro define a configuração do plugin nvim-ufo para ser usada com o gestor de plugins lazy.nvim.
-
 return {
   'kevinhwang99/nvim-ufo',
   dependencies = {
