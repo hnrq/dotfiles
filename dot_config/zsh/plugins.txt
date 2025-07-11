@@ -1,0 +1,15 @@
+# Themes
+romkatv/powerlevel10k
+
+# Plugins
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-completions
+zsh-users/zsh-history-substring-search
+junegunn/fzf
+rupa/z
+
+# Oh My Zsh Plugins
+ohmyzsh/ohmyzsh lib/docker
+ohmyzsh/ohmyzsh plugins/npm
+ohmyzsh/ohmyzsh plugins/git
