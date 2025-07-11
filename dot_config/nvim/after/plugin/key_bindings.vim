@@ -17,3 +17,6 @@ map <C-n> :NERDTreeToggle<CR>
 noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
+
+" Custom command to copy relative path
+command! CopyRelPath call setreg('+', expand('%'))

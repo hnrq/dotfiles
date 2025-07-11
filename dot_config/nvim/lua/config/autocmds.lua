@@ -60,3 +60,24 @@ end,
 desc = "Auto-resize windows when terminal is resized",
 })
 
+-- Autosave group
+local autosave_group = augroup("Autosave", { clear = true })
+
+-- Autosave on TextChanged and InsertLeave
+autocmd({"TextChanged", "InsertLeave"}, {
+group = autosave_group,
+callback = function()
+    vim.cmd("silent! wa")
+end,
+desc = "Autosave on text changed or leaving insert mode",
+})
+
+-- Enable autosave when entering a buffer
+autocmd("BufEnter", {
+group = autosave_group,
+callback = function()
+    vim.cmd("silent! wa")
+end,
+desc = "Autosave on buffer enter",
+})
+
